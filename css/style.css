@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+html{
+    background-color:rgb(161, 149, 136);
+}
+
+body{
+    background-color: rgb(244, 238, 228);
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+}
+
+header img{
+  
+    width: 100%;
+    display: block;
+    border-radius:0 0 20px 20px;
+
+}
+
+header h1{
+    background-color: rgba(107, 67, 17, 0.251);
+    border-radius:20px 20px 0 0;
+    /* border: 4px solid saddlebrown; */
+    text-align: center;
+    color: rgb(99, 81, 44);
+    font-size: 5vw;
+    
+ 
+    width: 100%;
+    
+}
+
+
+header,
+footer,
+#no-1,
+#no-2,
+#no-3 {
+    padding: 10px;
+}
+
+
+ul#wrapper{
+    list-style-type: none;
+   display:grid;
+   
+    margin:0 10px 10px 10px;
+    column-gap: 5px;
+    grid-template-columns:2fr 2fr 2fr ;
+
+  row-gap: 5px;
+}
+
+.one{
+    grid-column-start: 1;
+    grid-column-end:  2;
+}
+.four{
+   
+    grid-column-start: 2;
+    grid-column-end:  3;
+}
+
+ul#wrapper li a{
+    display: grid;
+    width:100%;
+    /* margin: 0px; */
+    background-color: burlywood;
+    padding:13px;
+    text-decoration: none;
+    border: 2px solid brown;
+    text-align: center;
+    border-radius: 20px;
+    row-gap: 0;
+    font-size: 2vw;
+    color: black;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+ul#wrapper li a:hover{
+    background-color: rgb(170, 141, 103);
+
+}
+
+
+
+#dropdown .content:hover {
+    display: grid;
+}
+
+fieldset{
+    display: block;
+   
+  
+    margin: 0 auto;
+    width: 30%;
+
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), center center fixed no-repeat ;
+  
+
+
+}
+
+legend {
+    color: black;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    
+
+}
+
+
+#fav {
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+input[ type=submit] {
+    margin: 10px auto;
+
+}
+
+
+.picture{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.9)),url(../img/Header.jpg) ;
+    /* background-image: url(../img/Header.jpg); */
+    background-repeat: no-repeat;
+    background-size:  cover;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0 10px;
+    border-radius: 20px;
+   text-align: center;
+   font-size: 2vw;
+   align-items: center;
+    
+}
+form input{
+    font-size: 2vw;
+}
+
+.love{
+    display: grid;
+}
+.font p{
+    /* background-color: black; */
+    display: grid;
+    padding: 30px;
+   text-align: left;
+   
+
+}
+.love img{
+    
+    display: grid;
+    grid-area: 1/2/2/2;
+    width:25vw;
+    padding: 10px;
+  /* max-inline-size: 100%; */
+  block-size: auto;
+  border-radius: 10px;
+}
+.picture h2{
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(1, 0, 0, 0.6);
+    padding: 30px;
+   justify-content: center;
+    margin: 0 auto;
+   
+
+}
+
+footer{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.9)),url(../img/footer-1.jpg)center center fixed ;
+    height: 200px;
+font-size: 2em;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    background-color: #000000ee;
+}
+
+footer p{
+text-shadow: 31%;
+
+    /* text-decoration: underline; */
+}
+
+footer img{
+    width: 65px;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    bottom: 10px;
+    opacity: 0.5;
+}
+footer img:hover{
+    width: 65px;
+    position: fixed;
+    bottom: 0;
+    bottom: 20px;
+    opacity: 1;
+}
+
+@media only screen and (min-width:600px) and (max-width:960px){
+
+  
+    ul#wrapper li a{
+
+        justify-content: center;
+        height: 70px;
+        font-size: 3.5vw;
+        padding: 10px 10px 10px 10px;
+    }
+    form input{
+        font-size: 4vw;
+    }
+    fieldset{
+        font-size: 4vw;
+    }
+    footer{
+        font-size: 2rem;
+        
+    }
+    footer img{
+        width: 65px;
+        position: fixed;
+        bottom: 0;
+        left: 1px;
+        opacity: 0.5;
+    }
+    footer img:hover{
+        width: 65px;
+        position: fixed;
+        bottom: 0;
+        bottom: 20px;
+        opacity: 1;
+    }
+    .picture p{
+        font-size: 4vw;
+    }
+ .picture h2{
+    font-size: 5vw;
+ }
+ .love img{
+    grid-area: 2/1/2/2;
+    width: 100%;
+}
+.love{
+    border-radius: 20px;
+    border: 3px solid burlywood;
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+
+}
+}
+@media (max-width:600px){
+    body{
+   background-size: 100%;
+    }
+    ul#wrapper{
+        list-style-type: none;
+       display: block;
+        margin:10px;
+
+    }
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0,0,0,0.1)),url(../img/mobile-v.jpg) center center ;border: 1px solid brown;
+margin: 10px;
+    height: 277px;
+    display: block;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+
+}
+    header img{
+        display: none;
+        
+    }
+    header h1{
+        color: black;
+        background-color: inherit;
+    }
+
+    ul#wrapper li a{
+        font-size: 5vw;
+        padding: 10px;
+    }
+    .picture{
+        background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0,0,0,0.1)),url(../img/coffee.jpg) center center fixed no-repeat ;
+        background-position:center;
+        background-position-y: 88%;
+        color: rgba(255, 255, 255, 1.0);
+        font-size: 5vw;
+     
+        
+        
+    }
+   .picture p{
+       font-size:20px;
+       font-weight:lighter;
+   }
+   footer{
+    font-size: 5vw;
+    height: 200px;
+    padding-top: 65px;
+   }
+   fieldset{
+    display: block;
+    
+  background-color: none;
+    margin: 0 auto;
+    width: 30%;
+
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), center center fixed no-repeat ;
+    background-position-x: 50%;
+   }
+   
+   form input{
+    font-size: 5vw;
+}
+
+.love{
+    border-radius: 20px;
+    border: 3px solid burlywood;
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+
+}
+.love p{
+    font-size: 4vw;
+    padding: 20px;
+    
+}
+.love img{
+    grid-area: 2/1/2/2;
+    width: 100%;
+}
+footer img{
+    width: 65px;
+    position: fixed;
+    bottom: 0;
+    left: 1px;
+    opacity: 1;
+}
+
+}

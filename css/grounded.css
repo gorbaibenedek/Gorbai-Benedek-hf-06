@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+    display: grid;
+}
+
+ul li {
+    display: grid;
+}
+.grounded-pic{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(../img/grounded.jpg)fixed ;
+    /* background-image: url(../img/Header.jpg); */
+    background-repeat: no-repeat;
+    background-size:  cover;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0 10px;
+    border-radius: 20px;
+   text-align: center;
+   font-size: 2vw;
+   align-items: center;
+    
+}
+
+
+.grounded h2,
+.capsules h2{
+font-size: 3vw;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(1, 0, 0, 0.6);
+    padding: 30px;
+   justify-content: center;
+    margin: 0 auto;
+   
+}
+.sidamo p,
+.nicaragua p{
+
+    display: grid;
+    text-align: left;
+    grid-area: 1/2/2/2;
+}
+
+.sidamo img,
+.yirgacheffe img,
+.nicaragua img,
+.injerto img{
+    width: 25vw;
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: 10px;
+}
+
+.yirgacheffe img,
+.injerto img{
+    grid-area: 1/2/2/2;
+
+}
+
+
+.yirgacheffe p,
+.injerto p{
+    display: grid;
+    grid-area: 1/1/2/2;
+    text-align: left;
+}
+
+.sidamo,
+.yirgacheffe,
+.nicaragua,
+.injerto{
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.667);
+
+}
+
+.capsules-pic{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../img/capsules.jpeg)fixed ;
+  
+    background-repeat: no-repeat;
+    background-size:  cover;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0 10px;
+    border-radius: 20px;
+   text-align: center;
+   font-size: 2vw;
+   align-items: center;
+}
+
+.capsules ul{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    width: inherit;
+    margin: 0 auto;
+}
+.capsules > p{
+    margin: 10px;
+border: 3px solid burlywood;
+border-radius: 10px;
+}
+
+
+.capsules ul,li,img,p{
+    display: grid;
+  
+    align-items: start;
+}
+
+.original,
+.vertuo{
+    display: grid;
+    border:3px solid bisque;
+    border-radius: 20px;
+    margin: 0 10px 10px 10px;
+
+}
+.original{
+    grid-area: 1/1/1/1;
+   align-items: start;
+   justify-items: start;  
+   padding: 5px;
+}
+
+.vertuo{
+    
+    grid-area: 1/3/1/3;
+   align-items: start;
+   justify-items: end;  
+   padding: 5px;
+   
+}
+.vertuo p,
+.original p{
+    width:25vw;
+   
+}
+
+
+.original img,
+.vertuo img,
+.compare img{
+   
+
+width: 25vw;
+max-inline-size: 100%;
+block-size: auto;
+border-radius: 10px;
+}
+
+.compare {
+    display: grid;
+    grid-area: 1/2/3/2;
+    border:3px solid bisque;
+    padding: 5px;
+    border-radius: 20px;
+   
+}
+.capsules>p:hover,
+.vertuo:hover,
+.original:hover,
+.compare:hover{
+    background-color: rgba(61, 46, 24, 0.651);
+}
+@media only screen and (min-width:600px) and (max-width:960px){
+    .capsules-pic{
+        display: block;
+        content: inherit;
+    
+    text-align:left ;
+    }
+    
+    .capsules{
+font-size: 3vw;
+    }
+    header h1{
+        font-size: 8vw;
+    }
+    
+    .capsules>h2,
+    .grounded>h2{
+        text-align: center;
+        font-size: 5vw;
+    }
+    .vertuo p,
+.original p{
+    width: 100%;
+}
+.capsules-pic ul, p{
+    display: block;
+ 
+}
+
+.vertuo,
+.original,
+.compare{
+    border: 3px solid burlywood;
+    border-radius: 20px;
+    margin:10px;
+    padding: 20px;
+}
+
+.capsules-pic img{
+    margin: 0 auto;
+    max-inline-size: 100%;
+    padding: 0;
+place-content: center;
+    
+}
+}
+@media (max-width:600px){
+.capsules-pic{
+    display: block;
+font-size: 4vw;
+text-align:left ;
+}
+
+.capsules-pic  > .capsules > p
+{
+    text-align: center;
+
+    margin: 10px;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    
+}
+.capsules h2,
+.grounded-pic h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+.capsules-pic img{
+    width: 100%;
+    padding: 0;
+
+    
+}
+
+.vertuo p,
+.original p{
+    width: 100%;
+}
+.capsules-pic ul, p{
+    display: block;
+ 
+}
+
+.vertuo,
+.original,
+.compare{
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    margin:10px;
+    padding: 20px;
+}
+
+
+header h1{
+    color: black;
+    background-color: inherit;
+}
+ul li {
+    display: block;
+}
+.yirgacheffe img,
+.sidamo img,
+.nicaragua img,
+.injerto img{
+   
+    width: 100%;
+    max-inline-size: 100%;
+    
+}
+.grounded-pic{
+    display: block;
+    font-size: 4vw;
+   
+}
+
+.grounded-pic p{
+text-align: center;
+}
+}
